@@ -153,8 +153,8 @@ function processMessage($message) {
 اللعبة بسيطه جدا و سهله اللعب 😍
 فقط اضغط على ( بدء اللعبه 🎈 ) لبدء اللعب 🕶", 'reply_markup' => array(
             "inline_keyboard"=>array(
-       array(array("text"=>"المطور ❤️","url"=>"https://telegram.me/THEKING5"),
-    array("text"=>"القناة ☘","url"=>"https://telegram.me/NETFREE5")),
+       array(array("text"=>"المطور ❤️","url"=>"https://telegram.me/gowad"),
+    array("text"=>"القناة ☘","url"=>"https://telegram.me/arabic_android")),
        array(array("text"=>"بدء اللعبه 🎈","switch_inline_query"=>md5(date("YMDms"))))
    )
   )));
@@ -204,7 +204,7 @@ function callbackMessage($callback){
      $Tab[3][0]["text"]="مغادرة اللعبة 😢";
      $Tab[3][0]["callback_data"]="Left";
      
-     apiRequest("editMessageText",array("inline_message_id"=>$message_id,"text"=>"Game started\n\n اللاعب الاول:$P1Name(❌)\nاللاعب الثاني:$P2Name(⭕️)\n\n دور اللاعب : $P1Name(❌) .","reply_markup"=>array(
+     apiRequest("editMessageText",array("inline_message_id"=>$message_id,"text"=>"بدأت اللعبه 🎲\n\n اللاعب الاول:$P1Name(❌)\nاللاعب الثاني:$P2Name(⭕️)\n\n دور اللاعب : $P1Name(❌) .","reply_markup"=>array(
        "inline_keyboard"=>$Tab 
      )));
      exit;
